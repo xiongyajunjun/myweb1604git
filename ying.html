@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<style style="text/css">
+	*{padding: 0;margin: 0;}
+	html{font-size:12px;}
+	#ww{margin:0 auto; width:100%;max-width: 640px; height:100%;}
+@font-face {font-family: "iconfont";
+    src: url('fonts/iconfont.eot?t=1471404582'); /* IE9*/
+    src: url('fonts/iconfont.eot?t=1471404582#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff?t=1471404582') format('woff'), /* chrome, firefox */
+    url('fonts/iconfont.ttf?t=1471404582') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg?t=1471404582#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+    font-family:"iconfont" !important;
+    font-size:3rem;
+    font-style:normal;
+    color:white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+		#id1{
+			position: fixed;
+			width:100%;
+			max-width:640px;
+			height:44px;
+			background: #3e5656;
+			margin:0 auto;
+			display:flex;
+			align-items:center;
+			color:beige;
+			font-size: 2rem;
+			z-index: 5;
+		}
+		#dd{
+			margin: 0 auto;
+			width:100%;
+			max-width: 640px;
+			height:44px;
+			
+		}
+		#id2{
+			display:flex;
+			width:100%;
+			max-width:640px;
+			height:110px;
+			margin: 0 auto;
+			background: #044858;
+			align-items:flex-end;
+			justify-content: space-between;
+			border-bottom: solid 2px white;
+		}
+		.c1{
+			display:flex;
+			width:20%;
+			height:110px;
+			font-size: 2rem;
+			justify-content: center;
+			align-items: center;
+			color:white;
+			font-weight: bolder;
+		}
+		.c2{
+			display:flex;	
+			width:60%;
+			height:110px;
+			font-size: 2rem;
+			color: white;
+			/*flex-direction: column;*/
+			align-content: space-between;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+		.c3{
+			
+			width:20%;
+			height:110px;
+			display: flex;
+
+			align-items: center;
+			justify-content: center;
+		}
+		#id3{
+			position: fixed;
+			bottom:0px;
+			width:100%;
+			max-width: 640px;
+			height:90px;
+			background:#02223a;
+			margin:0 auto;
+			z-index: 9;
+			display: flex;			
+		}
+		#id3-1{width:20%;
+		       height:100%;
+		       display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  
+		}
+		#id3-2{width:20%;
+		        height:100%;
+		          accelerator: false;
+		          
+		          
+		          
+		        
+		       display: flex;
+			   justify-content: center;
+			   align-items: center;
+		}
+		#id3-3{width:20%;
+		        height:100%;
+		       display: flex;
+			   justify-content: center;
+			   align-items: center;
+		}
+		#id3-4{width:20%;
+		       height:100%;
+		       display: flex;
+			   justify-content: center;
+			   align-items: center;
+		}
+		#id3-5{width:20%;
+		        height:100%;
+		       display: flex;
+			  justify-content: center;
+			  align-items: center;
+		}
+		#id4{
+			margin :0 auto;
+			/*width:100%;
+			max-width: 640px;*/
+			height:5px;
+			background :red;
+			position: fixed;
+            z-index: 8;
+            bottom: 90px;
+		}
+		#ff{
+			margin: 0 auto;
+			width:100%;
+			max-width: 640px;
+			height:95px;
+		}
+		#kk{
+			width:4rem;
+			height:4rem;
+		}
+		
+		 @media  screen  and (max-width: 400px) {
+		  	   html{
+		  	   	font-size:8px;
+		  	   }
+		  	   #kk{
+		  	   	width:2rem;
+			    height:2rem;
+		  	   }
+		  }
+	</style>
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+	 var Arr;
+		$(function(){
+			 Arr=[{
+                        id: "1",
+                        name: "怒放的生命",
+                        singer: "汪峰",
+                        src: "audio/test.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "2",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                        
+                    },
+                    {
+                        id: "3",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "4",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "5",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "6",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "7",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "8",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "9",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "10",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "11",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "12",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "13",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "14",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "15",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "16",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "17",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "18",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "19",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "20",
+                        name: "后来",
+                        singer: "刘若英",
+                        src: "audio/bg.mp3",
+                         img:"../img/delete.jpg"
+                    },
+                    {
+                        id: "21",
+                        name: "断点",
+                        singer: "张敬轩",
+                        src: "audio/bg.ogg",
+                        img:"../img/delete.jpg"
+                    }]
+			for(var i=0;i<Arr.length;i++){
+			$("article").append(
+					"<div id='id2'>"
+					+ "<div id='p1' class='c1'><p>"+Arr[i].id+"</p></div>"
+					+"<div id='p1' class='c2'>"
+				    +"<p style='width:100%;height:40px;display: inline-block;'>"+Arr[i].name+"</p>"
+				    +"<p style='width:100%;height:40px;display: inline-block;'>"+Arr[i].singer+"</p>"	
+					+"</div>"
+					+"<div id='p1' class='c3'>"
+					+"<img id='kk' src="+Arr[i].img+" onclick='deletew("+i+")'/>"
+					+"</div>"
+				    +"</div>"
+				   
+			)
+			}
+//			 $("#kk").on("click",function () {     
+//          if(confirm("亲，您要删吗？")){              
+//            Arr.splice($(this).index(),1);
+//              $(this).parents("#id2").remove();
+//          }
+//      })
+//	function  deletew(s) {
+//      if(confirm("亲，您要删吗？")){
+//          //在外观上删除。
+//          $("#id2").get(s).remove();
+//
+//          //在数组里删除对应的元素
+//         Arr.splice(s,1);
+//         
+//      }
+//  }
+		})
+//精度条
+function text(){
+ //最大宽度
+ var width=637;
+  var divWidth=document.getElementById("id4");
+  var count=divWidth.style.width;
+  divWidth.style.width=parseInt(count)+1+"px";
+  if(parseInt(count)>width){
+  clearInterval(ting);
+  return false;
+ }
+
+}
+var ting;
+//$(function (){
+//	$(".cc").click(function(){
+//	ting=setInterval("text()",100);	
+//	})
+//})
+//播放
+$(function(){
+	$(".cc").click(function(){
+		var v=document.getElementById("mm");
+			     v.play();
+			     ting=setInterval("text()",100);
+		$(".zz").css("display","block");	
+		$(".cc").css("display","none");
+	})
+	//暂停
+	$(".zz").click(function(){
+				var v=document.getElementById("mm");
+			     v.pause();
+			     clearInterval(ting);
+			    $(".zz").css("display","none");	
+		       $(".cc").css("display","block"); 
+			})
+})
+	</script>
+	<body>
+		<div id="ww">
+		<header>
+			<section id="id1">我的收藏</section>
+		</header>
+		<div id="dd"></div>
+		<article>
+		</article>
+		<div id="id4" style="width:0px">			
+		</div>
+		
+		<footer id="id3">
+			<div id="id3-1"><img src="../img/ttt.jpg"> </div>
+			<div id="id3-2"> <i class="icon" id="prev">&#xe601;</i></div>
+			<div id="id3-3"> <i class="icon cc" id="play">&#xe600;</i>
+			<i class="icon zz" id="play" style="display: none;">&#xe606;</i></div>
+			<div id="id3-4"> <i class="icon" id="next">&#xe602;</i></div>
+			<div id="id3-5"> <i class="icon" id="heart">&#xe605;</i></div>
+		</footer>
+		<div id="ff"></div>
+		</div>
+		<audio id="mm"src="audio/test.mp3" ></audio>
+	</body>
+</html>
